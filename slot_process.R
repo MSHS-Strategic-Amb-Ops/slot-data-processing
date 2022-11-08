@@ -157,8 +157,9 @@ con <- dbConnect(odbc(), Driver = "Oracle",
                  PWD = "villea04123$"
 )
 
-slot_date_1 <- "2022-01-01"
-slot_date_2 <- Sys.Date() -1
+slot_date_1 <- "2019-01-01"
+slot_date_2 <- "2019-12-31"
+# slot_date_2 <- Sys.Date() -1
 
 slot_sql <- paste0("SELECT DEPARTMENT_NAME,PROVIDER_NAME,
 	       SLOT_BEGIN_TIME,NUM_APTS_SCHEDULED,SLOT_LENGTH,
